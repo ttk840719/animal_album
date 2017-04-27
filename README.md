@@ -1,24 +1,11 @@
-# README
+# Simple Animal Album
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I created this simple web application by using the Ruby on Rails framework, and by following the steps on this YouTube video:
+(How To Build A Recipe Box In Rails 4 - Mackenzie Child) https://www.youtube.com/watch?v=QhdzE1yNs-0 
 
-Things you may want to cover:
+The web app can do the followings:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. User can create an account, sign in, and sign out.
+2. A signed in user can upload and edit an image, and write descriptions. (all three are required fields)
+3. A signed in user can delete images it upload.
+4. Users that are not signed in can also view the photos.
