@@ -1,6 +1,6 @@
 # Simple Animal Album
 
-I created this simple web application by using the Ruby on Rails framework, and by following the steps on this YouTube video:
+This is the first time I tried using Ruby. I created this simple web application by using the Ruby on Rails framework, and by following the steps on this YouTube video:
 (How To Build A Recipe Box In Rails 4 - Mackenzie Child) https://www.youtube.com/watch?v=QhdzE1yNs-0 
 
 The web app can do the followings:
