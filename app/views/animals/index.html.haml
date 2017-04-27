@@ -1,0 +1,12 @@
+.header
+	%h1 Home page
+
+-@animal.each_slice(3) do |animals|
+	.row
+		-animals.each do |animal|
+			.col-md-4
+				.animal
+					.image_wrapper
+						= link_to animal do
+							= image_tag animal.image.url(:medium)
+					%h2= link_to animal.title, animal

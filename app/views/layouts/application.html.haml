@@ -1,0 +1,29 @@
+!!! 5
+%html
+%head
+	%title Animal Album App
+	
+	= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': true
+	= javascript_include_tag 'application', 'data-turbolinks-track': true
+	= csrf_meta_tags
+
+%body
+	%nav.navbar.navbar-default
+		.container
+			.navbar-brand= link_to "Animal Album", root_path
+
+			- if user_signed_in?
+				%ul.nav.navbar-nav.navbar-right
+					%li= link_to "New Photo", new_animal_path
+					%li= link_to "Sign out", destroy_user_session_path, method: :delete
+					
+			- else		
+				%ul.nav.navbar-nav.navbar-right
+					%li= link_to "Sign Up", new_user_registration_path
+					%li= link_to "Sign In", new_user_session_path
+
+	.container
+		-flash.each do |name, msg| #notice message
+			= content_tag :div, msg, class: "alert"
+			
+		= yield

@@ -1,0 +1,19 @@
+.main_content
+	#animal_top.row
+		.col-md-4
+			= image_tag @animal.image.url(:medium, class:"animal_image")
+		.col-md-8
+			#animal_info
+				%h1= @animal.title
+				%p.description= @animal.description
+				%p
+					Photo by
+					= @animal.user.email
+
+	.row
+		.col-md-12
+			= link_to "Back", root_path, class: "btn btn-default"
+			- if user_signed_in?
+				= link_to "Edit", edit_animal_path, class: "btn btn-default"
+				= link_to "Delete", animal_path, method: :delete, data: {confirm: "Are you sure you want to delete the photo?"}, class: "btn btn-default"	
+
