@@ -3,6 +3,8 @@
 This is the first time I tried using Ruby. I created this simple web application by using the Ruby on Rails framework, and by following the steps on this YouTube video:
 (How To Build A Recipe Box In Rails 4 - Mackenzie Child) https://www.youtube.com/watch?v=QhdzE1yNs-0 
 
+After starting the server, enter 'localhost:3000' in the browser to view the page.
+
 The web app can do the followings:
 
 1. User can create an account, sign in, and sign out.
